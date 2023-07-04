@@ -1,0 +1,19 @@
+.show_notes{
+    display: flex; flex-direction: column;
+    background-color: #4fd0d0;
+    align-items: center;
+    padding: 2vw ;
+}
+.heading0{
+    color: #21766e;
+}
+
+.n_container{
+    width: 700px;
+    margin: 1vw; padding: 0.8vw 2vw 1vw 2vw;
+    background-color: #6ce9e9;
+    box-shadow: 0px 0px 0.5vw;
+}
+.n_head{
+    text-align: center;
+}
