@@ -27,12 +27,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // ..
   ];
 
-  // Send the notes as JSON
+  // Sending the notes json
   echo json_encode($notes);
 }
 
 
-echo json_encode($notes);
+if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
+  //
+}
+
+
 ?>
 
 
