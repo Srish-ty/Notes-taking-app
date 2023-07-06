@@ -9,7 +9,7 @@ export const Notes= () => {
     //const category='general';
     useEffect(() => {
       //   `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey0}&category=${category}`
-      fetch('http://localhost:5000/notes',{
+      fetch('http://localhost:8000/get-notes.php',{
         method: 'GET',
         headers: {
           'Access-Control-Allow-Origin': '*',
@@ -18,7 +18,7 @@ export const Notes= () => {
         },
       }) // API endpoint for notes
         .then(response => {return response.json();})
-        .then(data => {setNotes(data.notes);})
+        .then(data => {setNotes(data);})
         .catch(error => {console.error('Error fetching notes:', error);});
     },[]);
 
