@@ -10,10 +10,26 @@
 
 .n_container{
     width: 700px;
+    border-radius: 10px;
     margin: 1vw; padding: 0.8vw 2vw 1vw 2vw;
     background-color: #6ce9e9;
     box-shadow: 0px 0px 0.5vw;
 }
+@media only screen and (max-width:830px) {
+.n_container{
+    width: 80%;
+}    
+}
 .n_head{
     text-align: center;
+}
+.n_para{
+    padding: 2vw;
+}
+.n_dates{
+    padding: 1vw 2vw 0vw 2vw;
+    border-top:1px solid #21766e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
